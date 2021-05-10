@@ -1,1 +1,1 @@
-Exercicios voltados a programaç web Trybe
+Exercicios voltados a programação web Trybe
