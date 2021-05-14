@@ -1,6 +1,18 @@
-div:hover {
-    border: 2px solid black;
-}
 div:nth-child(3) {
     color: blue;
+}
+div:nth-child(4) {
+    color: red;
+}
+div:nth-child(5) {
+    color: palegreen;
+}
+div:nth-child(6) {
+    color: darkblue;
+}
+div:nth-child(7) {
+    color: whitesmoke;
+}
+div:hover {
+    border: 2px solid black;
 }
