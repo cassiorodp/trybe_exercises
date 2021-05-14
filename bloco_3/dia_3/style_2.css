@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+#mario {
+    height: 300px;
+    position: absolute;
+    left: 300px;
+}
+#gomba {
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 300px;
+}
+#ballon {
+    height: 100px;
+    position: absolute;
+    top: 370px;
+    right: 300px;
+    z-index: 2;
+
+}
+#bowser {
+    position: absolute;
+    height: 300px;
+    top: 370px;
+    right: 100px;
+    z-index: 1;
+}
+.word {
+    position: absolute;
+    font-size: 14px;
+    top: 390px;
+    right: 310px;
+    z-index: 3;
+}
