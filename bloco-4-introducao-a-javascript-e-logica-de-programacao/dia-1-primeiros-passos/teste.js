@@ -31,21 +31,27 @@
 // console.log(area);
 // console.log(perimetro);
 
-let candidateState = "lista"
+// let candidateState = "lista"
 
-switch (candidateState) {
-  case "aprovada":
-    console.log("aprovada");
-    break;
+// switch (candidateState) {
+//   case "aprovada":
+//     console.log("aprovada");
+//     break;
 
-  case "lista":
-    console.log("lista");
-    break;
+//   case "lista":
+//     console.log("lista");
+//     break;
 
-  case "reprovada":
-    console.log("reprovada");
-    break;
+//   case "reprovada":
+//     console.log("reprovada");
+//     break;
 
-    default:
-      console.log ("Valor invalido");
-}
+//     default:
+//       console.log ("Valor invalido");
+// }
+
+// let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+// for (let name of names) {
+//   console.log(name);
+// }

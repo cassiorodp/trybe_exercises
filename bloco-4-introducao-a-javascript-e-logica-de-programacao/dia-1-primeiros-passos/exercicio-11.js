@@ -1,10 +1,10 @@
-let salary = 6000;
+let salary = -6000;
 let baseSalary;
 let inss;
 let ir;
 
-if (salary <= 0 ) {
-  console.log('valor invalido');
+if (salary <= 0) {
+  throw new Error('valor invalido')
 } else if (salary < 1556.94) {
   inss = salary * 0.08;
 } else if (salary >= 1556.95 && salary <= 2594.92) {
@@ -25,7 +25,7 @@ if (baseSalary < 1903.98) {
   ir = (baseSalary * 0.15) - 354.80;
 } else if (baseSalary >= 3751.06 && baseSalary <= 4664.68) {
   ir = (baseSalary * 0.225) - 636.13;
-} else if (baseSalary > 4664.68) {
+} else {
   ir = (baseSalary * 0.275) - 869.36;
 }
 console.log("Salário: " + (baseSalary - ir));
