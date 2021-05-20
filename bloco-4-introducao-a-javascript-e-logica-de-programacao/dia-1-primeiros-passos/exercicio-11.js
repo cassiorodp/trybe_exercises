@@ -1,4 +1,4 @@
-let salary = 3000;
+let salary = 6000;
 let baseSalary;
 let inss;
 let ir;
