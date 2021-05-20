@@ -90,3 +90,55 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // for (let indexDivisao = 0; indexDivisao < contador.length; indexDivisao += 1 ) {
 //   console.log((contador[indexDivisao] / 2));
 // }
+
+//Bonus
+
+//ORDEM CRESCENTE
+// for (let index = 1; index < numbers.length; index += 1) {
+//   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//     if (numbers[index] < numbers[secondIndex]) {
+//       let position = numbers[index];
+//       numbers[index] = numbers[secondIndex];
+//       numbers[secondIndex] = position;
+//     }
+//   }
+// }
+// console.log(numbers)
+
+//ORDEM DECRESCENTE
+// for (let index = 1; index < numbers.length; index += 1) {
+//   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//     if (numbers[index] > numbers[secondIndex]) {
+//       let position = numbers[index];
+//       numbers[index] = numbers[secondIndex];
+//       numbers[secondIndex] = position;
+//     }
+//   }
+// }
+// console.log(numbers);
+
+//MULTIPLICACAO
+let newNumbers = [];
+
+for (index = 0; index < numbers.length; index += 1) {
+  if (index + 1 < numbers.length) {
+    newNumbers.push(numbers[index] * numbers[index +1])
+    }
+    else {
+      newNumbers.push(numbers[index] * 2)
+    }
+  }
+console.log(newNumbers);
+
+
+
+//Anotacao do bonus
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [3, 5, 9, 19, 70, 8, 100, 2, 35, 27];
+// index = 2 / index[2] = 3
+//secondIndex = 0 / secondIndex[0] = 5
+// position = index[2] = 3
+
+// index = 2 / index[2] = 5
+//secondIndex = 1 / secondIndex[1] = 9
+// position = index[2] = 5
