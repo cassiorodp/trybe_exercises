@@ -13,34 +13,34 @@
 
 // //Exercicio 2
 
-let size = 5;
-let symbol = '*';
-let inputLine = '';
+// let size = 5;
+// let symbol = '*';
+// let inputLine = '';
 
-for (let lineIndex = 0; lineIndex < size; lineIndex += 1) {
-  inputLine = inputLine + symbol;
-  console.log(inputLine);
-};
+// for (let lineIndex = 0; lineIndex < size; lineIndex += 1) {
+//   inputLine = inputLine + symbol;
+//   console.log(inputLine);
+// };
 
 // //Exercicio 3
 
-// // let n = 5;
-// // let symbol = '*';
-// // let inputLine = '';
-// // let inputPosition = n;
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
+// let inputPosition = n;
 
-// // for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
-// //   for (let columnIndex = 1; columnIndex <= n; columnIndex += 1) {
-// //     if (columnIndex < inputPosition) {
-// //       inputLine = inputLine + ' ';
-// //     } else {
-// //       inputLine = inputLine + symbol;
-// //     }
-// //   }
-// //   console.log(inputLine);
-// //   inputLine = '';
-// //   inputPosition -= 1;
-// // };
+// for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+//   for (let columnIndex = 1; columnIndex <= n; columnIndex += 1) {
+//     if (columnIndex < inputPosition) {
+//       inputLine = inputLine + ' ';
+//     } else {
+//       inputLine = inputLine + symbol;
+//     }
+//   }
+//   console.log(inputLine);
+//   inputLine = '';
+//   inputPosition -= 1;
+// };
 
 // //Exercicio 4
 
@@ -91,12 +91,12 @@ for (let lineIndex = 0; lineIndex < size; lineIndex += 1) {
 // //Exercicio 6
 
 
-// let divisors = 1;
-// let numberToCheck = 31;
+// let divisores = 0;
+// let numero = 11;
 
-// for (let number = 2; number <= numberToCheck; number += 1) {
-//   if (numberToCheck % number === 0) divisors += 1;
+// for (let contador = 2; contador <= numero; contador += 1) {
+//   if (numero % contador === 0) divisores += 1;
 // }
 
-// if (divisors === 2) console.log(numberToCheck + ' é primo');
-// else console.log(numberToCheck + ' não é primo');
+// if (divisores === 1) console.log(numero + ' é primo');
+// else console.log(numero + ' não é primo');
