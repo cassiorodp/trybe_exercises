@@ -39,14 +39,14 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 //Exercicio 5
-// let maiorNumero = numbers[2];
+let maiorNumero = [];
 
-// for (index = 0; index < numbers.length; index += 1) {
-//   if (numbers[index] > maiorNumero) {
-//     maiorNumero = numbers[index]
-//   }
-// }
-// console.log(`maior numero: ${maiorNumero}`);
+for (index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > maiorNumero) {
+    maiorNumero = numbers[index]
+  }
+}
+console.log(`maior numero: ${maiorNumero}`);
 
 //Exercicio 6
 // let oddNumbers = 0; 
@@ -118,17 +118,17 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(numbers);
 
 //MULTIPLICACAO
-let newNumbers = [];
+// let newNumbers = [];
 
-for (index = 0; index < numbers.length; index += 1) {
-  if (index + 1 < numbers.length) {
-    newNumbers.push(numbers[index] * numbers[index +1])
-    }
-    else {
-      newNumbers.push(numbers[index] * 2)
-    }
-  }
-console.log(newNumbers);
+// for (index = 0; index < numbers.length; index += 1) {
+//   if (index + 1 < numbers.length) {
+//     newNumbers.push(numbers[index] * numbers[index +1])
+//     }
+//     else {
+//       newNumbers.push(numbers[index] * 2)
+//     }
+//   }
+// console.log(newNumbers);
 
 
 
