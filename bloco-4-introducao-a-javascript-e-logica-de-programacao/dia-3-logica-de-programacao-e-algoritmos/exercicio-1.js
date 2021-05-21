@@ -1,14 +1,15 @@
 //Exercicio 1
+
 // let n = 5;
 // let symbol = '*';
+// let inputLine = '';
 
 // for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
-//   symbol = symbol + '*'
-// }
-// for (let index = 0; index < n; index += 1) {
-//   console.log(symbol)
-  
-// }
+//   inputLine = inputLine + symbol;
+// };
+// for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+//   console.log(inputLine);
+// };
 
 //Exercicio 2
 
@@ -16,9 +17,9 @@
 // let symbol = '*';
 // let inputLine = '';
 
-// for (let lineIndex = 0; lineIndex <= size; lineIndex += 1) {
-//   console.log(inputLine);
+// for (let lineIndex = 0; lineIndex < size; lineIndex += 1) {
 //   inputLine = inputLine + symbol;
+//   console.log(inputLine);
 // };
 
 //Exercicio 3
