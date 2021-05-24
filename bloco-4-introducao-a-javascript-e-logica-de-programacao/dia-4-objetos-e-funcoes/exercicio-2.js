@@ -1,16 +1,16 @@
 // Tarefa 1
 
-function palindrome (name) {
-  // let nameArray = name.split('');
-  let isPalindrome = true;
-  for (let index in name) {
-    if (name[index] != name[name.length - 1]) {
-      isPalindrome = false
-    }
-  }
-  return isPalindrome
-}
-console.log(`É um palindromo? ${palindrome('cassio')}`);
+// function palindrome (name) {
+//   let nameArray = name.split('');
+//   let isPalindrome = true;
+//   for (let index in name) {
+//     if (name[index] != (name[(name.length - 1) - index])) {
+//       isPalindrome = false
+//     }
+//   }
+//   return isPalindrome
+// }
+// console.log(`É um palindromo? ${palindrome('arara')}`);
 
 //Tarefa 2
 // let test = [2, 3, 6, 7, 10, 1]
