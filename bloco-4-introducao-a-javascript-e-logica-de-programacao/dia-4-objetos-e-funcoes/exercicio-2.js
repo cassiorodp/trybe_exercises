@@ -94,3 +94,35 @@
 // console.log(sumTotal(5));
 
 //Tarefa 7
+
+//Primeira resolução
+// function endWordVerifier (word, ending) {
+//   word = word.split('');
+//   ending = ending.split('');
+//   control = true;
+//   for (let index = 0; index < word.length; index += 1) {
+//     if (word[word.length - ending.length + index] != ending[index]) {
+//       control = false;
+//     }
+//   }
+//   return control
+// }
+// console.log(endWordVerifier('trybe', 'be'));
+
+//Segunda resolução
+// function verificaFimPalavra(palavra, fimPalavra) {
+//   let inversoPalavra = palavra.split('').reverse().join('');
+//   let inversoFimPalavra = fimPalavra.split('').reverse().join('');
+//   let result;
+
+//   for (let index = 0; index < inversoFimPalavra.length; index += 1) {
+//     if (inversoPalavra[index] !== inversoFimPalavra[index]) {
+//       result = false;
+//       break;
+//     } else {
+//       result = true;
+//     }
+//   }
+  
+//   return result;
+// }
