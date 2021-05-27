@@ -22,7 +22,8 @@ corretTitle ('Exercício 5.1 - JavaScript');
 
 function upperCase () {
   for (let i = 0; i < document.getElementsByTagName('p').length; i += 1) {
-    document.getElementsByTagName('p')[i].style.textTransform = 'uppercase';
+    document.getElementsByTagName('p')[i].innerText = document.getElementsByTagName('p')[i].innerText.toUpperCase();
+    // document.getElementsByTagName('p')[i].style.textTransform = 'uppercase';
   }
 }
 upperCase();
