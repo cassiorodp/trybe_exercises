@@ -37,3 +37,7 @@ for (let index = 1; index < 11; index += 1) {
   unorderedList.appendChild(unorderedListItens);
 }
 // 9
+for (let index = 0; index < 3; index += 1) {
+  let h3 = document.createElement('h3');
+  div.appendChild(h3);
+}
