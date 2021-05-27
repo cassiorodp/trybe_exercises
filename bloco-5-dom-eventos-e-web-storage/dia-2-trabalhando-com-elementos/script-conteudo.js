@@ -13,7 +13,12 @@
 // let son = document.createElement('p');
 // document.querySelector('#elementoOndeVoceEsta').appendChild(son);
 // console.log(document.querySelector('#elementoOndeVoceEsta'));
-let sonOfSon = document.createElement('p');
-document.querySelector('#primeiroFilhoDoFilho').appendChild(sonOfSon);
+// let sonOfSon = document.createElement('p');
+// document.querySelector('#primeiroFilhoDoFilho').appendChild(sonOfSon);
 // console.log(document.querySelector('#primeiroFilhoDoFilho'));
-console.log(document.querySelector('#primeiroFilhoDoFilho p').parentNode.parentNode.nextElementSibling); 
+// console.log(document.querySelector('#primeiroFilhoDoFilho p').parentNode.parentNode.nextElementSibling); 
+let dad = document.querySelector('#primeiroFilho');
+let sun = document.querySelector('#segundoEUltimoFilhoDoFilho');
+document.querySelector('#paiDoPai').firstElementChild.removeChild(dad);
+document.querySelector('#paiDoPai').firstElementChild.firstElementChild.removeChild(sun);
+console.log(document.querySelector('#paiDoPai'));
