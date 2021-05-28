@@ -64,12 +64,27 @@ button.addEventListener('click', function () {
 });
 
 // Exercicio 4
-
+const buttonFriday = document.createElement('button');
 function friday (friday) {
   let divButton = document.querySelector('.buttons-container');
-  const button = document.createElement('button');
-  button.id = 'btn-friday';
-  button.innerHTML = friday;
-  divButton.appendChild(button);
+  buttonFriday.id = 'btn-friday';
+  buttonFriday.innerHTML = friday;
+  divButton.appendChild(buttonFriday);
 }
 friday('Sexta-Feira');
+
+// Exercicio 5
+
+
+let message = 'Bora beber';
+let fridays = document.querySelectorAll('.friday');
+let fridaysArray = [ 4, 11, 18, 25 ];
+buttonFriday.addEventListener('click', function () {
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerHTML !== message) {
+      fridays[index].innerHTML = message;
+    } else {
+      fridays[index].innerHTML = fridaysArray[index];
+    }
+  }
+})
