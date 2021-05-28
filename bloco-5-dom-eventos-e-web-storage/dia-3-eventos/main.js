@@ -13,6 +13,7 @@ divUm.addEventListener('click', addTech);
 divDois.addEventListener('click', addTech);
 divTres.addEventListener('click', addTech);
 
+// Input
 function addText (event) {
   const classTech = document.querySelector('.tech');
   classTech.innerText = event.target.value;
