@@ -101,3 +101,65 @@ let days = document.querySelector('#days');
     event.target.style.fontWeight = '200';
     event.target.style.fontSize = '20px';
   })
+
+// Exercicio 7
+
+function newTask (task) {
+  let taskConteiner = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  taskConteiner.appendChild(taskName);
+}
+newTask('Projeto: teste');
+
+// Exercicio 8
+
+function taskColor (color) {
+  let taskDiv = document.createElement('div');
+  let getDivTask = document.querySelector('.my-tasks');
+
+  taskDiv.classList.add('task');
+  taskDiv.style.backgroundColor = color;
+  getDivTask.appendChild(taskDiv);
+}
+
+taskColor('purple');
+
+// Exercicio 9
+
+function setTaskClass () {
+  let selectedTask = document.getElementsByClassName ('task selected');
+  let myTask = document.querySelector('.task');
+
+  myTask.addEventListener('click', function(event) {
+    if (selectedTask.length === 0 ) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  })
+}
+
+setTaskClass ();
+
+// Exercicio 10
+
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length > 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+setDayColor();
