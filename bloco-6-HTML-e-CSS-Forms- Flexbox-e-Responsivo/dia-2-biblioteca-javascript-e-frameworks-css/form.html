@@ -15,7 +15,7 @@
       <fieldset>
         <div class="mb-3">
           <label for="input-name" class="form-label">Nome:</label>
-          <input type="text" name="name" id="input-name" class="form-control" maxlength="40" required>
+          <input type="text" name="name" id="input-name" class="form-control validate" data-validate="required,input-name" maxlength="40" required>
         <div class="mb-3">
           <label for="input-email" class="form-label">E-mail:</label>
           <input type="email" name="email" id="input-email" class="form-control" maxlength="50" required>
@@ -59,8 +59,6 @@
       </fieldset>
     </form>
   </main>
-  <link href="validation.min.css" rel="stylesheet">
-  <script src="validation.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="script.js"></script>
 </body>
