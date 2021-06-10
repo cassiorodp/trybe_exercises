@@ -19,7 +19,7 @@
       </label>
       <br>
       <label for="input-cpf">CPF:
-        <input type="text" name="cpf" id="input-cpf" maxlength="11" required>
+        <input type="text" name="cpf" id="input-cpf" placeholder="Somente numeros" maxlength="11" required>
       </label>
       <br>
       <label for="input-adress">Endereço:
@@ -54,7 +54,12 @@
       <label for="inicial-date"> Data de início
         <input type="date" id="inicial-date" required>
       </label>
+      <div id="buttons">
+        <button id="job-submit" type="submit">Enviar</button>
+        <button id="clear">Limpar</button>
+      </div>
     </fieldset>
+
   </form>
   <script src="script.js"></script>
 </body>

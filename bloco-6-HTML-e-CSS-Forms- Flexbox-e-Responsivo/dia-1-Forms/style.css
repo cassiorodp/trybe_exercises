@@ -30,3 +30,12 @@ input[type=text], input[type=email] {
 select {
   margin-bottom: 10px;
 }
+
+#buttons {
+  text-align: center;
+}
+
+#buttons button{
+  width: 25%;
+  margin: 10px 10px;
+}

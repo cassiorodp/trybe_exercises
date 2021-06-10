@@ -12,8 +12,19 @@ for (let key in stateObject) {
   selectState.appendChild(option);
 };
 
-// for (let index = 0; index < stateArray.length; index += 1) {
-//   let option = document.createElement('option');
-//   option.innerHTML = stateArray[index];
-//   selectState.appendChild(option);
-// };
+const jobSubmit = document.querySelector('#job-submit');
+jobSubmit.addEventListener('click', () => {
+  preventDefault()
+});
+
+const clear = document.querySelector('#clear');
+const inputs = document.querySelectorAll('input');
+const textareas = document.querySelectorAll('textarea');
+clear.addEventListener('click', () => {
+  for (let index = 0; index < inputs.length; index += 1) {
+    inputs[index].value = '';
+  };
+  for (let index2 = 0; index2 < textareas.length; index2 += 1) {
+    textareas[index2].value = '';
+  };
+});
