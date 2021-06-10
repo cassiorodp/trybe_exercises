@@ -12,10 +12,11 @@ for (let key in stateObject) {
   selectState.appendChild(option);
 };
 
+const jobForm = document.querySelector('#job-form');
 const jobSubmit = document.querySelector('#job-submit');
 jobSubmit.addEventListener('click', () => {
-  preventDefault()
-});
+  jobForm.preventDefault();
+})
 
 const clear = document.querySelector('#clear');
 const inputs = document.querySelectorAll('input');
