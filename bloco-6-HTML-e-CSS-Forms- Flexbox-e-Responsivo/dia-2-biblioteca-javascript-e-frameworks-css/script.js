@@ -16,21 +16,3 @@ const jobForm = document.querySelector('#job-form');
 jobForm.addEventListener('submit', (event) => {
   event.preventDefault();
 })
-
-const clear = document.querySelector('#clear');
-const inputs = document.querySelectorAll('input');
-const textareas = document.querySelectorAll('textarea');
-clear.addEventListener('click', () => {
-  jobForm.reset();
-});
-
-const inputName = document.querySelector('#input-name');
-const jobSubmit = document.querySelector('#job-submit');
-const body = document.querySelector('body');
-jobSubmit.addEventListener('click', () => {
-  let div = document.createElement('div');
-  let p = document.createElement('p');
-  p.innerHTML = `Nome: ${inputName.value}`;
-  div.appendChild(p);
-  body.appendChild(div);
-});
