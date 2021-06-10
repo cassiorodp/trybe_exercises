@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  width: 80%;
+  margin: 10px auto 0 auto;
+  background-color: rgb(174, 176, 179);
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(104, 101, 101);
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(104, 101, 101);
+}
+
+input[type=text], input[type=email] {
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#buttons button{
+  width: 25%;
+  margin: 10px 10px;
+}
