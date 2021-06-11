@@ -16,3 +16,7 @@ const jobForm = document.querySelector('#job-form');
 jobForm.addEventListener('submit', (event) => {
   event.preventDefault();
 })
+
+validation.init("#job-form", {
+  events: ["change", "paste", "keyup"]
+});
