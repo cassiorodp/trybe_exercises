@@ -6,79 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="validation.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>Curriculo</title>
 </head>
-<body>
-  <h1>Currículo</h1>
-  <form action="" method="POST" id="job-form">
+<body class="border border-5 p-3 mb-2 bg-dark text-white">
+  <h1 class="display-2 text-center">Currículo</h1>
+  <form action="" method="POST" id="job-form" class="container">
     <fieldset>
       <legend>Dados gerais</legend>
-      <div>
-        <label for="input-name">Nome:</label>
-        <input type="text" id="input-name" class="validate" data-validate="required" maxlength="30">
+      <div class="mb-3">
+        <label for="input-name" class="form-label">Nome:</label>
+        <input type="text" id="input-name" class="validate form-control" data-validate="required" maxlength="30">
       </div>
-      <div>
-        <label for="input-email">E-mail: <input type="email" name="email" id="input-email" class="validate" maxlength="50" data-validate="required,email" >
-        </label>
+      <div class="mb-3">
+        <label for="input-email" class="form-label">E-mail:</label>
+        <input type="email" name="email" id="input-email" class="validate form-control" form-control" maxlength="50" data-validate="required,email" >
       </div>
-      <div>
-        <label for="input-cpf">CPF:
-          <input type="text" name="cpf" id="input-cpf" class="validate" placeholder="Somente numeros" maxlength="11" data-validate="required">
-        </label>
+      <div class="mb-3">
+        <label for="input-cpf" class="form-label">CPF: </label>
+          <input type="text" name="cpf" id="input-cpf" class="validate form-control" placeholder="Somente numeros" maxlength="11" data-validate="required">
       </div>
-      <div>
-        <label for="input-adress">Endereço:
-          <input type="text" name="adress" id="input-adress" class="validate" data-validate="required" maxlength="200" >
-        </label>
+      <div class="mb-3">
+        <label for="input-adress" class="form-label">Endereço:</label>
+          <input type="text" name="adress" id="input-adress" class="validate form-control" data-validate="required" maxlength="200" >
       </div>
-      <div>
-        <label for="input-city">Cidade:
-          <input type="text" name="city" id="input-city" class="validate" data-validate="required" maxlength="28" >
-        </label>
+      <div class="mb-3">
+        <label for="input-city" class="form-label">Cidade:</label>
+          <input type="text" name="city" id="input-city" class="validate form-control" data-validate="required" maxlength="28" >
       </div>
-      <div>
-        <label for="select-state"> Estado:
-          <select name="state" id="select-state">
+      <div class="mb-3">
+        <label for="select-state" class="form-label"> Estado:</label>
+          <select name="state" id="select-state" class="form-select">
           </select>
-        </label>
       </div>
-      <div>
-        <label for="input-home-1">Moradia:
-          <input type="radio" name="home" id="input-home-1" > Casa
-        </label>
-        <label for="input-home-2">
-          <input type="radio" name="home" id="input-home-2"  checked> Apartamento
-        </label>
+      <h2 class="fs-5 text-center">Moradia</h2>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="home" id="input-home-1" >
+          <label class="form-check-label" for="input-home-1">Casa </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="input-home-2">Apartamento</label>
+        <input class="form-check-input" type="radio" name="home" id="input-home-2"  checked>
       </div>
     </fieldset>
     <fieldset>
       <legend>Dados do seu ultimo emprego</legend>
       <div>
-        <label for="job">Resumo do currículo:</label><br>
+        <label class="form-label" for="job">Resumo do currículo:</label><br>
         <textarea name="last-job" id="job" class="validate" data-validate="required"cols="50" rows="10" maxlength="1000"  placeholder="Digite um breve resumo de seu currículo"></textarea>
       </div>
       <div>
-        <label for="job-tittle"> Ultimo cargo:
-          <input type="text" name="title" id="job-tittle" class="validate" data-validate="required" maxlength="40" placeholder="Digite seu ultimo cargo">
-        </label>
+        <label class="form-label" for="job-tittle"> Ultimo cargo:</label>
+          <input type="text" name="title" id="job-tittle" class="validate form-control" data-validate="required" maxlength="40" placeholder="Digite seu ultimo cargo">
       </div>
       <div>
-        <label for="job-description">Resumo do cargo:</label><br>
+        <label class="form-label" for="job-description">Resumo do cargo:</label><br>
         <textarea name="description" id="job-description" class="validate" data-validate="required" cols="50" rows="10" maxlength="500"  placeholder="Digite um breve resumo do seu último cargo"></textarea><br>
       </div>
       <div>
-        <label for="inicial-date"> Data de início
-          <input type="text" id="inicial-date" >
-        </label>
+        <label class="form-label" for="inicial-date"> Data de início</label>
+          <input class="validate form-control" type="text" id="inicial-date" data-validate="required">
       </div>
-      <div id="buttons">
-        <button id="job-submit" type="submit">Enviar</button>
-        <button type="reset" id="clear">Limpar</button>
+      <div class="text-center mt-3">
+        <button class="btn btn-light m-2" id="job-submit" type="submit">Enviar</button>
+        <button class="btn btn-light m-2" type="reset" id="clear">Limpar</button>
       </div>
     </fieldset>
   </form>
   <script src="validation.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
