@@ -63,5 +63,20 @@ footer p {
   h2 {
     font-size: 30px;
   }
+  .asides {
+    display: flex;
+    justify-content: space-around;
+  }
   
+  .aside-one ul li {
+    font-size: 20px;
+  }
+
+  .aside-two ul li {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
