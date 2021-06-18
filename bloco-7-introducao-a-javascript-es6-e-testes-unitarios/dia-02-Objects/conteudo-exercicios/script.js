@@ -94,3 +94,17 @@ person.lastName = 'Ferreira';
 console.log('Mudando a propriedade lastName através do objeto person');
 console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
 console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
+
+
+const person = {
+  name:'Roberto',
+};
+
+const lastName = {
+  lastName: 'Silva',
+};
+
+const newPerson = Object.assign({},person,lastName);
+newPerson.name = 'Gilberto';
+console.log(newPerson);
+console.log(person);
