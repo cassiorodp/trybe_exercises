@@ -27,7 +27,7 @@ const addTurn = (object, key, keyValue) => {
 
 //Parte 2
 const listKeys = (object) => Object.keys(object);
-// console.log(listKeys(lesson1));
+console.log(listKeys(lesson1));
 
 //Parte 3
 const objectLength = (object) => Object.keys(object).length;
