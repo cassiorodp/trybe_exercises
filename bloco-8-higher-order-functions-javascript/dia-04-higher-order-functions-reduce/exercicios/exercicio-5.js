@@ -9,7 +9,9 @@ const names = [
 function containsA() {
   return names.reduce((acc, curr) =>
      acc + curr.toLowerCase().split('').reduce((acumulator, current) => {
-        if (current === 'a') return acumulator + 1;
+        if (current === 'a') {
+          return acumulator + 1;
+        }
         return acumulator;
      }, 0), 0);
 }
