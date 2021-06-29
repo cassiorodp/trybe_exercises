@@ -38,3 +38,6 @@ const multiply = (number, value = 1) => {
 };
 
 console.log(multiply(8));
+
+const sum = (...args) => args.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum(4, 7, 8, 9, 60)); // 88
