@@ -13,15 +13,12 @@ const handleError = (errorReason) => console.log(`Error getting temperature: ${e
 
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (onSuccess, onFailure) => {
+  const temperature = getMarsTemperature();
+  const curiositySuccess = Math.random() >= 0.4;
+
   setTimeout(() => {
-    const temperature = getMarsTemperature();
-    const curiositySuccess = Math.random() >= 0.4;
-    if (curiositySuccess) {
-      onSuccess(temperature);
-    }
-    else {
-      onFailure('Robot is busy');
-    };
+    if (curiositySuccess) onSuccess(temperature)
+    else onFailure('Robot is busy');
   }, messageDelay());
 }
 
