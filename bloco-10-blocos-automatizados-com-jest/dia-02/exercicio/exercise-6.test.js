@@ -39,3 +39,20 @@ describe('Testando promise - findAnimalByName', () => {
     });
   });
 });
+
+describe('Testando promise - findAnimalByName (async/await)', () => {
+  describe('Quando existe o animal com a idade procurada', () => {
+    test('Retorne o array dos animais', async () => {
+      expect.assertions(1);
+      await expect(getAnimal(1)).resolves.toEqual([{ name: 'Dorminhoco', age: 1, type: 'Dog' }])
+    });
+  });
+
+  describe('Quando não existe o animal com a idade procurada', () => {
+    test('Retorna um erro', async () => {
+      expect.assertions(1);
+      await expect(getAnimal(3)).rejects.toBe(('Nenhum animal com essa idade!'))
+      // return expect(getAnimal(3)).rejects.toBe('Nenhum animal com essa idade!');
+    });
+  });
+});
