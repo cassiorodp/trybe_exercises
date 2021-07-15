@@ -9,4 +9,6 @@ function fetchDog() {
       )
   );
 }
+
+fetchDog().then(response => console.log(response.message))
 module.exports = { fetchDog };
