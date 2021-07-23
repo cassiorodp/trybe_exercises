@@ -19,8 +19,10 @@ class Pokedex extends React.Component {
 
   nextPokemon(numberOfPokemons) {
     this.setState(state => ({
-      pokemonIndex: (state.pokemonIndex + 1) % numberOfPokemons,
+      pokemonIndex: state.pokemonIndex === numberOfPokemons - 1 ? 0 : state.pokemonIndex + 1
+      // pokemonIndex: (state.pokemonIndex + 1) % numberOfPokemons,
     }));
+    console.log(this.state.pokemonIndex);
   }
 
   fetchFilteredPokemons() {
