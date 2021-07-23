@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  min-width: 50%;
+  background-color: rgba(255, 255, 255, 0.541);
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 25px;
+  min-width: 60%;
+}
+
+.pokemon-info {
+  color: rgb(0, 0, 0);
+  flex: 1 1 0;
+  padding: 5px;
+  margin: 10px 10px;
+  border: 1px red solid;
+  border-radius: 10px;
+}

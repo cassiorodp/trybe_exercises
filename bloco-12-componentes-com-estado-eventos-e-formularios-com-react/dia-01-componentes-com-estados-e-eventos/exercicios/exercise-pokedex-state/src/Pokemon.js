@@ -1,9 +1,10 @@
 import React  from 'react';
 import PropTypes from 'prop-types';
+import './pokemon.css'
 
 class Pokemon extends React.Component {
   render() {
-    const { pokemonsInfo: { name, type, averageWeight, image } } = this.props;
+    const { pokemon: { name, type, averageWeight, image } } = this.props;
 
     return (
       <section >
@@ -19,12 +20,12 @@ class Pokemon extends React.Component {
 }
 
 Pokemon.propTypes = {
-  pokemonsInfo: PropTypes.shape({
+  pokemon: PropTypes.shape({
     name: PropTypes.string,
     type: PropTypes.string,
     averageWeight: PropTypes.shape({
       measurementUnit: PropTypes.string,
-      value: PropTypes.number,
+      value: PropTypes.string,
     }),
     image: PropTypes.string,
   }).isRequired,

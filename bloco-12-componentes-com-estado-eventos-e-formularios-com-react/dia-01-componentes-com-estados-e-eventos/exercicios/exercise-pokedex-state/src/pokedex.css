@@ -1,0 +1,21 @@
+.pokedex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+  min-width: 50%;
+}
+
+.pokedex-buttons-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokedex-button {
+  margin-top: 10px;
+}
+
+.pokedex-button:disabled {
+  background-color: #D0D0D0;
+}

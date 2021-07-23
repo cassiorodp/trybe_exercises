@@ -1,0 +1,11 @@
+button {
+  margin: 2.5px;
+}
+
+.button-text {
+  background-color: #CB2D3A;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
