@@ -9,8 +9,8 @@ class Pokemon extends React.Component {
     return (
       <section >
         <div className = 'pokemon-info'>
-        <p>{name}</p>
-        <p>{type}</p>
+        <p>Name: {name}</p>
+        <p>Type: {type}</p>
         <p>Average weight: {averageWeight.value} {averageWeight.measurementUnit}</p>
         </div>
         <img src={image} alt={name} />
