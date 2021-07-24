@@ -19,4 +19,6 @@ section {
   margin: 10px 10px;
   border: 1px red solid;
   border-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
 }
