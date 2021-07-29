@@ -18,6 +18,14 @@ class App extends React.Component {
     this.fetchDogImame();
   }
 
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.image !== this.state.image) {
+  //     const { image } = this.state;
+  //     const dogBreedName = image.split('/')[4];
+  //     alert(dogBreedName)
+  //   }
+  // }
+
   async fetchDogImame() {
     this.setState(
       { loading: true }, // First param
