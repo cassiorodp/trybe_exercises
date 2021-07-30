@@ -1,10 +1,11 @@
 import React  from 'react';
 import PropTypes from 'prop-types';
 import './pokemon.css'
+import { Link } from 'react-router-dom';
 
 class Pokemon extends React.Component {
   render() {
-    const { pokemon: { name, type, averageWeight, image } } = this.props;
+    const { pokemon: { id, name, type, averageWeight, image } } = this.props;
 
     return (
       <section >
@@ -12,6 +13,7 @@ class Pokemon extends React.Component {
         <p>Name: {name}</p>
         <p>Type: {type}</p>
         <p>Average weight: {averageWeight.value} {averageWeight.measurementUnit}</p>
+        <p><Link className='pokemon-link' to={`/pokemon/${id}`}>See more details</Link></p>
         </div>
         <img src={image} alt={name} />
       </section>

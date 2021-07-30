@@ -1,14 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-image: url(./images/EachWellinformedAidi-small.gif);
   background-color: #1e1e24;
   background-repeat: repeat;
   background-size: 200px;
+  box-sizing: border-box;
 }
 
 main {
@@ -19,12 +15,6 @@ main {
 
 h1 {
   color: #CB2D3A;
+  text-align: center;
 }
 
-
-
-section img {
-  margin: 5px;
-  width: fit-content;
-  height: auto;
-}

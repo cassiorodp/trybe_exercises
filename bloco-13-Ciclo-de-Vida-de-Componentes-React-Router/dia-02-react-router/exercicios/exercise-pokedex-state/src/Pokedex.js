@@ -37,9 +37,6 @@ class Pokedex extends React.Component {
 
   fetchPokemonTypes() {
     const { pokemons } = this.props;
-    // const auxArray = [];
-
-    // return (pokemons.reduce((types, { type }) => [...types, type], []));
     return [...new Set(pokemons.reduce((types, { type }) => [...types, type], []))]
   }
 
@@ -50,7 +47,6 @@ class Pokedex extends React.Component {
 
     return (
       <main>
-        <h1>Pokedex</h1>
         <div className = 'pokedex'>
           <Pokemon pokemon = { pokemon } />
         </div>

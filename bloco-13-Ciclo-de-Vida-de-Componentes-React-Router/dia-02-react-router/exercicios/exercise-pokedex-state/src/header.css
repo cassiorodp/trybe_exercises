@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar-links {
+  color: #CB2D3A;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-bar-links:hover {
+  background-color: #CB2D3A;
+  color: rgba(255, 255, 255);
+}
