@@ -6,7 +6,6 @@ class PokemonDetails extends React.Component {
     const { pokemons, match: { params: { pokeId } } } = this.props;
     const pokemon = pokemons.find((pokemon) => pokemon.id === Number(pokeId));
     const { name, type, averageWeight, image, summary, foundAt } = pokemon;
-    console.log(pokemon);
     return (
       <main>
         <h1 className='title-pokemon-details'>{`${name} details`}</h1>
@@ -26,7 +25,7 @@ class PokemonDetails extends React.Component {
           <h1 className='title-pokemon-details' >{`Game locations of ${name}`}</h1>
           <div className='pokemon-locations'>
             {foundAt.map((place) => (
-              <div>
+              <div key={place.location}>
                 <img src={place.map} alt={place.location} />
                 <h3>{place.location}</h3>
               </div>
