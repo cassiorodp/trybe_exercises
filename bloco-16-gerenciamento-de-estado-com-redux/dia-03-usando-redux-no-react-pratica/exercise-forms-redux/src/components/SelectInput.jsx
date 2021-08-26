@@ -9,6 +9,7 @@ class SelectInput extends Component {
         Estado:
         <select
           onChange={ handleInputChange }
+          className="form-select"
           value={ brazilState }
           id="brazilState"
           name="estados-brasil"

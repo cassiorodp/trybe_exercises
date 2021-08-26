@@ -1,0 +1,19 @@
+.professional-form {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(165, 164, 164, 0.555);
+  border-radius: 10px;
+  display: flex;
+  margin: 20vh auto;
+  flex-flow: column nowrap;
+  width: 80vw;
+}
+
+.fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.btn-secondary {
+  margin: 10px 0;
+}

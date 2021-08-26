@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import SelectInput from '../components/SelectInput';
 import TextInput from '../components/TextInput';
 import { updatePersonalForm } from '../redux/actions';
+import '../styles/personalForm.css';
 
 class PersonalForm extends Component {
   constructor() {
@@ -36,8 +37,8 @@ class PersonalForm extends Component {
   render() {
     const { brazilState } = this.state;
     return (
-      <form>
-        <fieldset>
+      <form className="personal-form">
+        <fieldset className="fieldset">
           <TextInput
             id="name"
             label="Nome:"
@@ -73,7 +74,11 @@ class PersonalForm extends Component {
             handleInputChange={ this.handleInputChange }
           />
         </fieldset>
-        <button onClick={ this.redirectToProfessional } type="button">
+        <button
+          className="btn btn-secondary"
+          onClick={ this.redirectToProfessional }
+          type="button"
+        >
           Enviar
         </button>
       </form>

@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
-import personalFormReducer from './personalFormReducer';
-import professionalFormReducer from './professionalFormReducer';
+import formReducer from './formReducer';
 
-const rootReducer = combineReducers({ personalFormReducer, professionalFormReducer });
+const rootReducer = combineReducers({ formReducer });
 
 export default rootReducer;
