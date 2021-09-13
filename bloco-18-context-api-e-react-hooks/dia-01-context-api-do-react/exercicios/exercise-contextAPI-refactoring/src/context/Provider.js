@@ -7,9 +7,9 @@ class Provider extends Component {
     super(props);
     this.state = {
       cars: {
-        red: false,
-        blue: false,
-        yellow: false,
+        redCar: false,
+        blueCar: false,
+        yellowCar: false,
       },
       signal: {
         color: 'red',
