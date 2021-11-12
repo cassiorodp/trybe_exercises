@@ -1,0 +1,17 @@
+// Command 1
+db.bios.find({ _id: 8 })
+
+// Command 2
+db.bios.find({ _id: 8 }, { name: true })
+
+// Command 3
+db.bios.find({ _id: 8 }, { _id: false, name: true, birth: true })
+
+// Command 4
+db.bios.find({ 'name.first': 'John' }).pretty()
+
+// Command 5
+db.bios.find().limit(3).pretty()
+
+// Command 6
+db.bios.find().skip(5).limit(2).pretty()
