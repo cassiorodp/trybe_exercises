@@ -1,4 +1,6 @@
 function avaliaSinal(num) {
+  if (typeof num !== "number") return "o parâmetro deve ser um número"
+
   if (num > 0) return "positivo";
 
   if (num < 0) return "negativo";
