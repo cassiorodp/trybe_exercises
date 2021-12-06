@@ -10,5 +10,5 @@ module.exports = (req, res, next) => {
 
   if (!rePassword.test(password)) return res.status(400).json({ message: 'invalid password'});
 
-  return res.status(200).json({'token': token})/
+  return res.status(200).json({'token': token})
 }
