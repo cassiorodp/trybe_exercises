@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const sinon = require('sinon');
 const { MongoClient, ObjectId } = require('mongodb');
 
-const { getConnection } = require('../models/mongoMockConnection');
+const { getConnection } = require('./mongoMockConnection');
 const MoviesModel = require('../../models/movieModel');
 
 describe('Busca o filme pelo Id', () => {
